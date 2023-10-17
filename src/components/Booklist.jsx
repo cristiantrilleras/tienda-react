@@ -33,7 +33,7 @@ const books = [
     title: 'Harry Potter and the Order of the Phoenix',
     author: 'J.K. Rowling',
     price: 20.99,
-    image: '',
+    image: 'https://pictures.abebooks.com/isbn/9780747569404-fr.jpg',
   },
 
   {
@@ -41,6 +41,14 @@ const books = [
     author: 'J.K. Rowling',
     price: 18.99,
     image: 'https://prodimage.images-bn.com/pimages/9780439139601_p0_v1_s1200x630.jpg',
+  },
+
+  {
+    index:1,
+    title: 'Harry Potter and the Cursed Child',
+    author: 'J.K. Rowling',
+    price: 20.99,
+    image: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTwXIcAPmKWgLxKUsabddMn1zw-cdjhoSoGvsbwMrFDy4Z6UaA',
   },
 
 
