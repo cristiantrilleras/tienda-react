@@ -5,6 +5,7 @@ import Cart from "./components/Cart";
 import { Routes, Route, Link } from 'react-router-dom';
 
 
+
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -46,32 +47,44 @@ function App() {
 
   return (
 
-    
-    <>
 
+    <>
       <div className="App">
+        <Link to="/">
         <h1 className="title">Harry Potter Book Store</h1>
+        </Link>
 
         <div className="subCart">
-          <h3 className="subtitle">Libros disponibles</h3>
-          <button>carrito de compras</button>
+          <Link to="/">
+          <button className="subtitle">Libros disponibles</button>
+          </Link>
+          
+          <Link to="/cart">
+            <button>Ir al Carrito</button>
+          </Link>
         </div>
 
-      </div>
-      <Routes>
+        <Routes>
 
-        <Route path="/" element={<BookList addToCart={addToCart} />} />
-        <Route path="/carrito" element={<Cart
+          <Route path="/" element={<BookList addToCart={addToCart} />} />
+          <Route path="/carrito" element={<Cart
+            setCart={setCart}
+            cart={cart}
+            updateQuantity={updateQ}
+            removeFromCart={removeFromCart}
+          />}
+          />
+
+
+        </Routes>
+
+        <Cart
           setCart={setCart}
           cart={cart}
           updateQuantity={updateQ}
           removeFromCart={removeFromCart}
-        />} 
         />
-
-
-      </Routes>
-
+      </div>
     </>
   );
 }

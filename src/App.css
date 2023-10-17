@@ -21,8 +21,15 @@
 
 .title{
   text-decoration: underline;
+  font-family: serif;
+  font-weight: bold;
+  color: black;
 }
 
+.subtitle{
+  color: black;     
+
+}
 
 .subCart{
   display: flex;
