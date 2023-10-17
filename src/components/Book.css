@@ -1,3 +1,11 @@
+.book{
+  width: 500px;
+}
+
 .imagen{
   height: 300px;
+}
+
+.stock{
+  color: green
 }

@@ -7,6 +7,7 @@ const books = [
     author: 'J.K. Rowling',
     price: 10.99,
     image: 'https://images.cdn2.buscalibre.com/fit-in/360x360/e3/bc/e3bcd85377567759874a0664f894a67b.jpg',
+    stock: 20
   },
 
   {
@@ -14,12 +15,14 @@ const books = [
     author: 'J.K. Rowling',
     price: 15.99,
     image: 'https://img1.od-cdn.com/ImageType-400/3450-1/%7B39CBDA0B-F15C-40E1-A169-A45AE395C3BF%7DIMG400.JPG',
+    stock: "no hay stock"
   },
   {
     title: 'Harry Potter y el prisionero de azcaban',
     author: 'J.K. Rowling',
     price: 13.99,
     image: 'https://images.cdn1.buscalibre.com/fit-in/360x360/1a/31/1a3145c3ba83287fabdb65514b893cf6.jpg',
+    stock: 10
   },
 
   {
@@ -27,6 +30,7 @@ const books = [
     author: 'J.K. Rowling',
     price: 15.99,
     image: 'https://m.media-amazon.com/images/I/71DWj7cP0ML._AC_UF1000,1000_QL80_.jpg',
+    stock: "no hay stock"
   },
 
   {
@@ -34,6 +38,7 @@ const books = [
     author: 'J.K. Rowling',
     price: 20.99,
     image: 'https://pictures.abebooks.com/isbn/9780747569404-fr.jpg',
+    stock: 5
   },
 
   {
@@ -41,27 +46,21 @@ const books = [
     author: 'J.K. Rowling',
     price: 18.99,
     image: 'https://prodimage.images-bn.com/pimages/9780439139601_p0_v1_s1200x630.jpg',
+    stock: 13
   },
 
   {
-    index:1,
-    title: 'Harry Potter and the Cursed Child',
+  
+    title: 'Harry Potter and the Cursed Child   ',
     author: 'J.K. Rowling',
     price: 20.99,
     image: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTwXIcAPmKWgLxKUsabddMn1zw-cdjhoSoGvsbwMrFDy4Z6UaA',
+    stock: 30
   },
 
-
-
-
-
-  
-
-  
-  // Agrega más libros aquí
 ];
 
-function BookList({ addToCart, removeFromCart }) {
+function  BookList({ addToCart }) {
   return (
     
     <div className="book-list">
@@ -71,8 +70,9 @@ function BookList({ addToCart, removeFromCart }) {
           title={book.title}
           author={book.author}
           price={book.price}
-          addToCart={addToCart}
+          addToCart={() => addToCart(book)}
           image={book.image}
+          stock={book.stock}
         />
       ))}
     </div>

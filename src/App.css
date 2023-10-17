@@ -19,4 +19,15 @@
   display: inline-block;
 }
 
+.title{
+  text-decoration: underline;
+}
 
+
+.subCart{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
