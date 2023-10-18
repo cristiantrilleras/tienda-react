@@ -12,7 +12,7 @@ function Book({ title, author, price, image, stock, addToCart }) {
       <h2>{title}</h2>
       <p>Author: {author}</p>
       <p>Price: ${price}</p>
-      <p className='stock'>libros disponibles {stock}</p> 
+      <p className='stock'>libros disponibles: {stock}</p> 
       <div>
         <button
           onClick={() => {

@@ -4,7 +4,11 @@
 
 .imagen{
   height: 300px;
+  
 }
+
+.imagen:hover{-webkit-transform:scale(1.3);transform:scale(0.9);}
+.contenedor {overflow:hidden;}
 
 .stock{
   color: green
