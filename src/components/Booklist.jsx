@@ -15,7 +15,7 @@ const books = [
     author: 'J.K. Rowling',
     price: 15.99,
     image: 'https://img1.od-cdn.com/ImageType-400/3450-1/%7B39CBDA0B-F15C-40E1-A169-A45AE395C3BF%7DIMG400.JPG',
-    stock: "no hay stock"
+    stock: 30
   },
   {
     title: 'Harry Potter y el prisionero de azcaban',

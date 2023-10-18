@@ -9,10 +9,12 @@ function Book({ title, author, price, image, stock, addToCart }) {
   return (
     <div className="book">
       <img src={image} alt={title} className='imagen'/>
+      <div className='descripcion'>
       <h2>{title}</h2>
       <p>Author: {author}</p>
       <p>Price: ${price}</p>
       <p className='stock'>libros disponibles: {stock}</p> 
+      </div>
       <div>
         <button
           onClick={() => {
@@ -27,6 +29,7 @@ function Book({ title, author, price, image, stock, addToCart }) {
         </button>
         <span>Quantity: {quantity}</span>
       </div>
+      
     </div>
   );
 }
