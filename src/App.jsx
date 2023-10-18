@@ -60,7 +60,8 @@ function App() {
           </Link>
           
           <Link to="/carrito">
-            <button>Ir al Carrito</button>
+           
+            <button><img src="https://th.bing.com/th/id/R.d41b0f0ab9fb615c319ffaeb2b1ec506?rik=PP4z381RlSeRjg&riu=http%3a%2f%2ficon-park.com%2fimagefiles%2fshopping_cart_light_orange.png&ehk=IBLAzmeN%2b%2bBBBoUN76O28ni8e0TN1ifCsCSPUaagoYg%3d&risl=&pid=ImgRaw&r=0" alt="" className="logo"/> <span>{cart.length}</span> </button>
           </Link>
         </div>
 

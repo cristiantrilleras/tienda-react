@@ -4,6 +4,7 @@ import "./CartItem.css"
 function CartItem({ title, price, quantity, removeFromCart, updateQuantity }) {
   return (
     <div className="cart-item">
+  
       <p>{title}</p>
       <p className='price'>costo unidad ${price}</p>
 
@@ -17,7 +18,7 @@ function CartItem({ title, price, quantity, removeFromCart, updateQuantity }) {
       <button className='increment' onClick={() => updateQuantity(title, false)}>-</button>
       </div>
       </div>
-
+    <hr />
     </div>
   );
 }

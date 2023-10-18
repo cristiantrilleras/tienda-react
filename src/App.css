@@ -42,6 +42,10 @@
 
 }
 
+.logo{
+  height: 100%;
+}
+
 button {
   display: inline-block;
   padding: 10px 20px;
@@ -53,6 +57,7 @@ button {
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  height: 40px;
 }
 
 button:hover {
