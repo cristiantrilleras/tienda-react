@@ -1,5 +1,6 @@
 import React from 'react';
 import CartItem from './CartItem';
+import "./Cart.css"
 
 function Cart({ cart, removeFromCart,updateQuantity, setCart }) {
   const getTotal = () => {

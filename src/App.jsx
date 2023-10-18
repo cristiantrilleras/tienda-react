@@ -59,7 +59,7 @@ function App() {
           <button className="subtitle">Libros disponibles</button>
           </Link>
           
-          <Link to="/cart">
+          <Link to="/carrito">
             <button>Ir al Carrito</button>
           </Link>
         </div>
@@ -78,12 +78,12 @@ function App() {
 
         </Routes>
 
-        <Cart
+        {/* <Cart
           setCart={setCart}
           cart={cart}
           updateQuantity={updateQ}
           removeFromCart={removeFromCart}
-        />
+        /> */}
       </div>
     </>
   );
